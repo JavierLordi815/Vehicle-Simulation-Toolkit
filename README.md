@@ -1,9 +1,10 @@
 ## Vehicle Simulation Toolkit
 
-This toolkit provides building blocks for the development of simulated driving scenarios. Two components included are:
+This toolkit provides building blocks for the development of simulated driving scenarios. Three components included are:
 
 1. Unity Vehicle Simulation Environment: Construct 3D environments with dynamic objects such as vehicles and pedestrians.
 2. Driving Scenario Vehicle Visualization Tool: Visualize driving scenarios in a 3D world from simulated or recorded data.
+3. Driving Scenario Generation Tool: Prototype scenario generation tool for crowdsourcing driving environments.
 
 ## Unity Vehicle Simulation Environment
 
@@ -68,3 +69,9 @@ Q - Quit.
 Run the executable from the command prompt with a string containing the location of your scenario.
 
 VehicleVisualizationTool.exe "...\Scenario Library\Scenario Example"
+
+## Driving Scenario Generation Tool
+
+![alt text](https://user-images.githubusercontent.com/3961167/28479849-1318f29a-6e13-11e7-8e0e-836cf62fe36e.gif)
+
+This is a prototype application to design and crowdsource driving scenarios to test autonomous vehicles in novel situations. It provides a simple user interface to add vehicles and pedestrians onto a virtual environment and add kinematic behaviors for each agent in the scene. The sensing of each agent is simulated (visual and depth) and can be used to test vehicle controllers. Future iterations of the application may include the ability to add more realistic surrounding driving environments and more detailed behavior models for surrounding dynamic agents.

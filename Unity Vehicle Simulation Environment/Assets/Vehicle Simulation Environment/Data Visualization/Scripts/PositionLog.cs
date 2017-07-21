@@ -32,25 +32,6 @@ namespace VehicleSimulation {
             psi = new List<float>();
         }
 
-        public void Test() {
-            time.Add(2.3f);
-            time.Add(3.4f);
-            x.Add(2.3f);
-            x.Add(3.4f);
-            y.Add(2.3f);
-            y.Add(3.4f);
-            z.Add(2.3f);
-            z.Add(3.4f);
-            phi.Add(2.3f);
-            phi.Add(3.4f);
-            theta.Add(2.3f);
-            theta.Add(3.4f);
-            psi.Add(2.3f);
-            psi.Add(3.4f);
-
-            ToJSON("Test.json");
-        }
-
         public void ToJSON(string filename) {
             JSONObject positionLog = new JSONObject();
             positionLog.AddField("time",floatListToString(time));
